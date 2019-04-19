@@ -1,0 +1,20 @@
+<ion-content>
+  <ion-card no-margin class="no-radius">
+    <ion-item lines="none" color="medium">
+      <ion-label>
+        <h2 no-margin class="fw500 no-margin">
+          <ion-text color="dark">Last session:</ion-text>
+          <ion-text  color="primary">{{lastamountOfHits}}</ion-text>
+        </h2>
+      </ion-label>
+      <ion-button shape="round" fill="outline" size="small" color="primary" (click)="alertLocation()">
+        Set Location
+        <ion-icon name="locate"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card>
+  <ion-card class="bg-white target">
+    <ion-img [src]="themeCover"></ion-img>
+  </ion-card>
+ </ion-content>
+  
